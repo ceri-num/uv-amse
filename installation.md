@@ -71,20 +71,7 @@ $ flutter devices
 Chrome (web) • chrome • web-javascript • Google Chrome 87.0.4280.88
 
 $ flutter run
-Downloading Web SDK...                                              3,1s
-Launching lib/main.dart on Chrome in debug mode...
-Waiting for connection from debug service on Chrome...             22,0s
-Debug service listening on ws://127.0.0.1:34925/76b6eUVs7mM=/ws
-
-Running with unsound null safety
-For more information see https://dart.dev/null-safety/unsound-null-safety
-
-Warning: Flutter's support for web development is not stable yet and hasn't
-been thoroughly tested in production environments.
-For more information see https://flutter.dev/web
-
-🔥  To hot restart changes while running, press "r" or "R".
-For a more detailed help message, press "h". To quit, press "q".
+...
 ```
 
 Vous devez voir l'application apparaitre dans le navigateur Chrome.
@@ -164,6 +151,7 @@ $ flutter emulators --launch Pixel_2_API_28
 
 # cd app + run the app
 $ flutter run
+...
 ```
 
 L'application devrait apparaitre dans un simulateur.
