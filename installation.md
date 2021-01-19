@@ -9,7 +9,7 @@
 ## Installer Flutter
 
 Dans un premier temps nous allons installer Flutter uniquement.
-Nous utiliserons la dernière version de Flutter dans son dépôt git.
+Nous utiliserons la dernière version du dépôt git de Flutter.
 
 
 ```
@@ -89,7 +89,7 @@ For a more detailed help message, press "h". To quit, press "q".
 
 Vous devez voir l'application apparaitre dans le navigateur Chrome.
 
-[Application Flutter exécutée dans Chrome](imgs/flutterInChrome.png)
+![Application Flutter exécutée dans Chrome](imgs/flutterInChrome.png)
 
 
 ## [Facultatif] Exécuter un projet Flutter sur un Smartphone connecté en USB
@@ -168,4 +168,4 @@ $ flutter run
 
 L'application devrait apparaitre dans un simulateur.
 
-[Application Flutter exécutée dans un simulateur](imgs/simulateurAndroid.png)
+![Application Flutter exécutée dans un simulateur](imgs/simulateurAndroid.png)
