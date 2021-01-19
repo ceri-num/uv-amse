@@ -2,7 +2,7 @@
 
 Dans ce cours, vous allez découvrir comment développer des applications mobiles à l'aide du framework [Flutter](https://flutter.dev/) basé sur les technologies Web et le langage [Dart](https://dart.dev/).
 
-![Nuage de mot autour du développement d'application mobile avec des technologies Web](imgs/tagcloud.png)
+![Nuage de mots autour du développement d'application mobile avec des technologies Web](imgs/tagcloud.png)
 
 Il existe 3 grands familles d'approches pour développer des applications mobiles :
 

@@ -1,6 +1,4 @@
-## Flutter
 
-Liens utiles :
 - [Documentation de Flutter](https://flutter.dev/docs).
 - [Gallerie d'applications](https://gallery.flutter.dev/)
 
