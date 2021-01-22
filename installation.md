@@ -6,6 +6,11 @@
 - Client git : [TurtoiseGit pour windows](https://tortoisegit.org/) ou [SourceTree](https://www.sourcetreeapp.com/)
 -- Créer votre dépôt git pour AMSE sur Github. Vous devez avoir une URL de dépôt similaire à : https://github.com/votre_login/amse.git
 
+{% hint style="alert" %}
+Toutes les instructions d'installation ci-après donne les commandes SHELL pour installer Flutter.
+Si vous êtes sous Windows, il faudra adapter ces instructions et vous référer à la documentation Flutter.
+{% endhint %}
+
 ## Installer Flutter
 
 Dans un premier temps nous allons installer Flutter uniquement.

@@ -1,4 +1,5 @@
 
+Flutter repose sur le langage Dart, l'idée est donc de découvrir les principaux éléments de ce langage à travers les liens suivants :
 
 - Historique de Dart sur wikipedia : https://en.wikipedia.org/wiki/Dart_(programming_language)
 - Aperçu du langage Dart : https://dart.dev/guides/language/language-tour
