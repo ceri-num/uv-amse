@@ -29,6 +29,7 @@ flutter run
 Critères de notations à titre indicatif :
 
 - Application opérationnelle sur plateforme mobile
-- Nombre de pages minimum (10 au minimum)
+- Code source factorisé (Classes, méthodes) et nettoyé (pas de blocs inutiles en commentaires, ...)
 - Utilisation de différents widgets
-- Thème(s) intéressant(s)
+- Contenu suffisant (2 séries et 2 Bds ne sont pas suffisants)
+
