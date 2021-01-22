@@ -6,6 +6,12 @@ Il s'agit de réaliser une **application de gestion de media** : Livres, Bds, Fi
 Imaginer les différentes pages de votre application ainsi que
 les liens entre elles. Vous pouvez les dessiner sur papier. Vous pouvez vous inspirer d'autres applications et notamment des  Widgets graphiques existants (cf. [Liens utiles](faq.md)).
 
+
+Vous devez créer une application comportant :
+- 1 navbar au minimum 3 pages : Home, Media, About
+    (cf. https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html)
+-
+
 ### Evaluation de votre application
 
 Installation de votre application :
