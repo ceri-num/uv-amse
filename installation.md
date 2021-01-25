@@ -3,19 +3,32 @@
 - [Discord](discord.com)
 - [Visual studio code](https://code.visualstudio.com/)
 -- plugins : [LiveShare](https://visualstudio.microsoft.com/services/live-share/) [Dart](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code) [Flutter](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter)
-- Client git : [TurtoiseGit pour windows](https://tortoisegit.org/) ou [SourceTree](https://www.sourcetreeapp.com/)
--- Créer votre dépôt git pour AMSE sur Github. Vous devez avoir une URL de dépôt similaire à : https://github.com/votre_login/amse.git
 
 {% hint style="alert" %}
 Toutes les instructions d'installation ci-après donne les commandes SHELL pour installer Flutter.
 Si vous êtes sous Windows, il faudra adapter ces instructions et vous référer à la documentation Flutter.
 {% endhint %}
 
+
+## git
+
+Installer git :
+
+- https://gitforwindows.org/
+- Client git : [TurtoiseGit pour windows](https://tortoisegit.org/) ou [SourceTree](https://www.sourcetreeapp.com/)
+
+Créer votre dépôt git pour AMSE sur Github. Vous devez avoir une URL de dépôt similaire à : https://github.com/votre_login/amse.git
+
+
 ## Installer Flutter
 
-Dans un premier temps nous allons installer Flutter uniquement.
-Nous utiliserons la dernière version du dépôt git de Flutter.
+Attention les instructions ci-dessous peuvent fonctionner sous tous les systèmes mais supposent que vous savez régler des variables d'environnement, ....
 
+Pour ceux qui sont sous Windows souhaitent être guidés, suivez l'un des tutos d'installation suivants :
+- https://flutter.dev/docs/get-started/install
+-  MLS/Ressources sur Flutter/Module Mobile et Image - Annexes - V0.1.pdf
+
+Si vous voulez utiliser la dernière version du dépôt git de Flutter et installer manuellement Flutter :
 
 ```
 $ git clone https://github.com/flutter/flutter.git
