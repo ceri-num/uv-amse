@@ -4,14 +4,14 @@
 - [Visual studio code](https://code.visualstudio.com/)
 -- plugins : [LiveShare](https://visualstudio.microsoft.com/services/live-share/) [Dart](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code) [Flutter](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter)
 
-## git
+## Installer git
 
-Installer git :
+Installer :
 
 - https://gitforwindows.org/
 - Client git : [TurtoiseGit pour windows](https://tortoisegit.org/) ou [SourceTree](https://www.sourcetreeapp.com/)
 
-Créer votre dépôt git pour AMSE sur Github. Vous devez avoir une URL de dépôt similaire à : https://github.com/votre_login/amse.git
+Créer ensuite votre dépôt git pour AMSE sur Github. Vous devez avoir une URL de dépôt similaire à : https://github.com/votre_login/amse.git
 
 
 ## Installer Flutter
