@@ -4,12 +4,6 @@
 - [Visual studio code](https://code.visualstudio.com/)
 -- plugins : [LiveShare](https://visualstudio.microsoft.com/services/live-share/) [Dart](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code) [Flutter](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter)
 
-{% hint style="alert" %}
-Toutes les instructions d'installation ci-après donne les commandes SHELL pour installer Flutter.
-Si vous êtes sous Windows, il faudra adapter ces instructions et vous référer à la documentation Flutter.
-{% endhint %}
-
-
 ## git
 
 Installer git :
@@ -27,6 +21,11 @@ Attention les instructions ci-dessous peuvent fonctionner sous tous les système
 Pour ceux qui sont sous Windows souhaitent être guidés, suivez l'un des tutos d'installation suivants :
 - https://flutter.dev/docs/get-started/install
 -  MLS/Ressources sur Flutter/Module Mobile et Image - Annexes - V0.1.pdf
+
+{% hint style="alert" %}
+Toutes les instructions d'installation ci-après donne les commandes SHELL pour installer Flutter.
+Si vous êtes sous Windows, il faudra adapter ces instructions ou vous référer à la documentation Flutter.
+{% endhint %}
 
 Si vous voulez utiliser la dernière version du dépôt git de Flutter et installer manuellement Flutter :
 
