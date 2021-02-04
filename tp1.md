@@ -12,6 +12,7 @@ Vous devez créer une application comportant :
     (cf. https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html)
 - des `ListView` https://api.flutter.dev/flutter/widgets/ListView-class.html
 - des `Image` https://api.flutter.dev/flutter/widgets/Image-class.html
+- éventuellement une `TabBarView`
 ...
 
 
