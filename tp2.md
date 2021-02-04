@@ -38,7 +38,7 @@ Un exemple simple de navigation est présenté ici : [Navigation entre pages](ht
 ![Une page par exercice](imgs/tp2_menu.png)
 
 
-## Exo 4 : Affichage d'un morceau d'image (une tuile)
+## Exo 4 : Affichage d'une tuile (un morceau d'image)
 
 `TODO`
 
