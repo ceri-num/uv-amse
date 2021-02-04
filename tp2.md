@@ -15,10 +15,10 @@ Appliquez des rotations, des homotéthies ou encore un effet miroir à une image
 
 ![Des sliders pour transformer une image](imgs/tp2_rotate.png)
 
-Vous pouvez égalament *clipper* le rendu d'un widget dans un [Container](https://api.flutter.dev/flutter/widgets/Container-class.html) pour qu'il ne dépasse jamais de la zone conteneur.
-Dans l'exemple ci-dessus, les coins de l'image sont coupés et peuvent pas dépasser le conteneur englobant. Exemple de code :
+Vous pouvez égalament *clipper* le rendu d'un widget dans un [Container](https://api.flutter.dev/flutter/widgets/Container-class.html) pour qu'il ne dépasse jamais de la zone du conteneur.
+Dans l'exemple ci-dessus, les coins de l'image sont coupés et ne peuvent pas dépasser le conteneur englobant. Exemple de code :
 
-```dart
+```Dart
 Container(
     clipBehavior: Clip.hardEdge,
     decoration: BoxDecoration(color: Colors.white),
