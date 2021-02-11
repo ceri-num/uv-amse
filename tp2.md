@@ -26,7 +26,20 @@ Container(
 )
 ```
 
-Vous pouvez même essayer d'automatiser l'incrémentation des valeurs pour produire une animation ;-)
+Vous pouvez même essayer d'automatiser l'incrémentation des valeurs pour produire une animation. Pour cela, vous pouvez utiliser :
+
+```dart
+    ...
+    const d = const Duration(milliseconds: 50);
+    new Timer.periodic(d, animate);
+    // this new Timer automatically calls animate every 50ms
+    ...
+
+void animate(Timer t) {
+    ...
+    t.cancel(); // stops the timer
+}
+```
 
 ![Animation basisque](imgs/animation.gif)
 
@@ -129,7 +142,7 @@ Puis faite une version où les cases sont des portions d'une même image.
 
 Enfin, permettez à l'utilisateur de configurer la taille en supposant que le plateau est carré (nombre de tuiles en largeur et en hauteur identique).
 
-![Plateau carré de taille réglable](imgs/configurableBoard.png)
+![Plateau carré de taille réglable](imgs/configurableBoard.gif)
 
 
 ## Exo 7 : Animation d'une tuile
@@ -137,7 +150,7 @@ Enfin, permettez à l'utilisateur de configurer la taille en supposant que le pl
 Le code ci-dessous permet d'échanger deux tuiles comme sur la figure.
 Testez et analysez ce code.
 
-![Echanger deux tuiles](imgs/swapTwoTiles.png)
+![Echanger deux tuiles](imgs/swapTwoTiles.gif)
 
 
 ```
@@ -242,7 +255,7 @@ Votre jeu aura au minimum 3 pages (vous pouvez en ajouter d'autres) :
 - une page infos (auteurs, ...)
 
 La page de configuration doit permettre :
-- de régler la taille du taquin c'est-à-dire le nombre de lignes et de colonnes
+- de régler la taille du taquin c'est-à-dire le nombre de lignes et/ou le nombre de colonnes
 - de choisir la difficulté i.e. le nombre de déplacements réalisés pour mélanger. Attention, il faut garantir la possibilité de pouvoir reconstituer l'image. Pour cela, il suffit de mélanger en réalisant des déplacements valides des tuiles
 - de choisir une image :
     * depuis internet via https://picsum.photos/512 par exemple
