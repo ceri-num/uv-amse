@@ -62,7 +62,7 @@ Ci-dessous le code complet de la widget `DisplayTileWidget` permettant d'affiche
 - contenant une [ClipRect](https://api.flutter.dev/flutter/widgets/ClipRect-class.html) qui permet couper une image
 - contenant une [Align](https://api.flutter.dev/flutter/widgets/Align-class.html) qui permet de positionner la ClipRect par rapport à l'[Image](https://api.flutter.dev/flutter/widgets/Image-class.html) qu'elle contient. Les paramètres `widthFactor` et `heightFactor` permettent de contrôler comment l'image originale est morcellée et la portion qui sera affichée.
 
-![Affichage d'une partie d'une image](imgs/croppedImage.png)
+![Affichage d'une partie d'une image](imgs/croppedTile.png)
 
 ```dart
 import 'package:Taquin/util.dart';
@@ -238,8 +238,6 @@ Construisez une version améliorée permettant d'échanger deux tuiles dans un p
 ![Echanger deux tuiles dans un plateau](imgs/swapTilesInABoard.png)
 
 Vous pouvez complexifier en ajoutant la possibilité de modifier la taille du plateau.
-
-![Echanger deux tuiles dans un plateau configurable](imgs/swapTilesInAConfigurableBoard.png)
 
 ![Vers un plateau de taquin (v1)](imgs/taquin_v1.gif)
 
