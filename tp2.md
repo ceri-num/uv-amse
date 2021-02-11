@@ -13,7 +13,7 @@ Affichez une image à l'aide du Widget [Image](https://api.flutter.dev/flutter/w
 
 Appliquez des rotations, des homotéthies ou encore un effet miroir à une image à l'aide des widgets : [Slider](https://api.flutter.dev/flutter/material/Slider-class.html), [Transform](https://api.flutter.dev/flutter/widgets/Transform-class.html).
 
-![Des sliders pour transformer une image](imgs/tp2_rotate.png)
+![Des sliders pour transformer une image](imgs/rotateImage.png)
 
 Vous pouvez égalament *clipper* le rendu d'un widget dans un [Container](https://api.flutter.dev/flutter/widgets/Container-class.html) pour qu'il ne dépasse jamais de la zone du conteneur.
 Dans l'exemple ci-dessus, les coins de l'image sont coupés et ne peuvent pas dépasser le conteneur englobant. Exemple de code :
@@ -26,6 +26,10 @@ Container(
 )
 ```
 
+Vous pouvez même essayer d'automatiser l'incrémentation des valeurs pour produire une animation ;-)
+
+![Animation basisque](imgs/animation.gif)
+
 ## Exo 3 : Menu et navigation entre pages
 
 Réaliser une page menu qui permet de naviguer entre les exercices.
@@ -35,20 +39,196 @@ Pour cela, vous pouvez utiliser les widgets : [ListView](https://api.flutter.dev
 Pour naviguer entre les pages, je vous recommende d'utiliser la propriété *onTap* de ListTile couplée avec le widget [Navigator](https://api.flutter.dev/flutter/dart-html/Navigator-class.html.
 Un exemple simple de navigation est présenté ici : [Navigation entre pages](https://flutter.dev/docs/cookbook/navigation/passing-data).
 
-![Une page par exercice](imgs/tp2_menu.png)
+![Une page par exercice](imgs/menu.png)
 
 
 ## Exo 4 : Affichage d'une tuile (un morceau d'image)
 
-`TODO`
+Ci-dessous le code complet de la widget `DisplayTileWidget` permettant d'afficher une partie d'image (*cropped*). L'idée est d'utiliser :
+- [SizedBox](https://api.flutter.dev/flutter/widgets/SizedBox-class.html) qui spécifie la taille de notre tuile
+- contenant une [ClipRect](https://api.flutter.dev/flutter/widgets/ClipRect-class.html) qui permet couper une image
+- contenant une [Align](https://api.flutter.dev/flutter/widgets/Align-class.html) qui permet de positionner la ClipRect par rapport à l'[Image](https://api.flutter.dev/flutter/widgets/Image-class.html) qu'elle contient. Les paramètres `widthFactor` et `heightFactor` permettent de contrôler comment l'image originale est morcellée et la portion qui sera affichée.
 
-## Exo 5 : Animation d'une tuile
+![Affichage d'une partie d'une image](imgs/croppedImage.png)
 
-`TODO`
+```dart
+import 'package:Taquin/util.dart';
+import 'package:flutter/material.dart';
 
-## Exo 6 : Génération du plateau de tuiles
+class Tile {
+  String imageURL;
+  Alignment alignment;
 
-`TODO`
+  Tile({this.imageURL, this.alignment});
+
+  Widget croppedImageTile() {
+    return FittedBox(
+      fit: BoxFit.fill,
+      child: ClipRect(
+        child: Container(
+          child: Align(
+            alignment: this.alignment,
+            widthFactor: 0.3,
+            heightFactor: 0.3,
+            child: Image.network(this.imageURL),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+Tile tile = new Tile(
+    imageURL: ImageGenerator.getStaticImageURL(0), alignment: Alignment(0, 0));
+
+class DisplayTileWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Display a Tile as a Cropped Image'),
+        centerTitle: true,
+      ),
+      body: Center(
+          child: Column(children: [
+        SizedBox(
+            width: 150.0,
+            height: 150.0,
+            child: Container(
+                margin: EdgeInsets.all(20.0),
+                child: this.createTileWidgetFrom(tile))),
+        Container(
+            height: 200,
+            child: Image.network(ImageGenerator.getStaticImageURL(0),
+                fit: BoxFit.cover))
+      ])),
+    );
+  }
+
+  Widget createTileWidgetFrom(Tile tile) {
+    return InkWell(
+      child: tile.croppedImageTile(),
+      onTap: () {
+        print("tapped on tile");
+      },
+    );
+  }
+}
+```
+
+
+## Exo 5 : Génération du plateau de tuiles
+
+Vous pouvez maintenant essayer de générer un plateau de tuiles en utilisant une [GridView](https://api.flutter.dev/flutter/widgets/GridView-class.html). Commencez par une version de taille fixe où les cases sont de simples [Container](https://api.flutter.dev/flutter/widgets/Container-class.html).
+
+![Plateau de taille fixe](imgs/gridOfColoredBoxes.png)
+
+Puis faite une version où les cases sont des portions d'une même image.
+
+![Plateau de taille fixe](imgs/fixedGridOfCroppedImages.png)
+
+Enfin, permettez à l'utilisateur de configurer la taille en supposant que le plateau est carré (nombre de tuiles en largeur et en hauteur identique).
+
+![Plateau carré de taille réglable](imgs/configurableBoard.png)
+
+
+## Exo 7 : Animation d'une tuile
+
+Le code ci-dessous permet d'échanger deux tuiles comme sur la figure.
+Testez et analysez ce code.
+
+![Echanger deux tuiles](imgs/swapTwoTiles.png)
+
+
+```
+import 'package:flutter/material.dart';
+import 'dart:math' as math;
+
+// ==============
+// Models
+// ==============
+
+math.Random random = new math.Random();
+
+class Tile {
+  Color color;
+
+  Tile(this.color);
+  Tile.randomColor() {
+    this.color = Color.fromARGB(
+        255, random.nextInt(255), random.nextInt(255), random.nextInt(255));
+  }
+}
+
+// ==============
+// Widgets
+// ==============
+
+class TileWidget extends StatelessWidget {
+  final Tile tile;
+
+  TileWidget(this.tile);
+
+  @override
+  Widget build(BuildContext context) {
+    return this.coloredBox();
+  }
+
+  Widget coloredBox() {
+    return Container(
+        color: tile.color,
+        child: Padding(
+          padding: EdgeInsets.all(70.0),
+        ));
+  }
+}
+
+void main() => runApp(new MaterialApp(home: PositionedTiles()));
+
+class PositionedTiles extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() => PositionedTilesState();
+}
+
+class PositionedTilesState extends State<PositionedTiles> {
+  List<Widget> tiles =
+      List<Widget>.generate(2, (index) => TileWidget(Tile.randomColor()));
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Moving Tiles'),
+        centerTitle: true,
+      ),
+      body: Row(children: tiles),
+      floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.sentiment_very_satisfied), onPressed: swapTiles),
+    );
+  }
+
+  swapTiles() {
+    setState(() {
+      tiles.insert(1, tiles.removeAt(0));
+    });
+  }
+}
+```
+
+Il faut noter :
+- on a séparé les objets modèles (`Tile`) des objets vues (`Widgets`)
+- `TileWidget` est une widget stateless
+- `PositionedTiles` est widget stateful dont l'apparence doit changer lorsque l'ordre des tuiles change
+
+Construisez une version améliorée permettant d'échanger deux tuiles dans un plateau.
+
+![Echanger deux tuiles dans un plateau](imgs/swapTilesInABoard.png)
+
+Vous pouvez complexifier en ajoutant la possibilité de modifier la taille du plateau.
+
+![Echanger deux tuiles dans un plateau configurable](imgs/swapTilesInAConfigurableBoard.png)
+
+![Vers un plateau de taquin (v1)](imgs/taquin_v1.gif)
 
 
 ## Jeu de taquin
