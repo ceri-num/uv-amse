@@ -145,7 +145,7 @@ Enfin, permettez à l'utilisateur de configurer la taille en supposant que le pl
 ![Plateau carré de taille réglable](imgs/configurableBoard.gif)
 
 
-## Exo 7 : Animation d'une tuile
+## Exo 6 : Animation d'une tuile
 
 Le code ci-dessous permet d'échanger deux tuiles comme sur la figure.
 Testez et analysez ce code.
@@ -239,10 +239,11 @@ Construisez une version améliorée permettant d'échanger deux tuiles dans un p
 
 Vous pouvez complexifier en ajoutant la possibilité de modifier la taille du plateau.
 
-![Vers un plateau de taquin (v1)](imgs/taquin_v1.gif)
+![Déplacer des Tuiles](imgs/movingTilesInBoard.gif)
 
+## Exo 7 : Jeu de taquin
 
-## Jeu de taquin
+![Plateau de taquin (v1)](imgs/taquin_v1.gif)
 
 En utilisant ou vous inspirant de tout ce qui a été vu depuis le début de ce tp, vous devez réaliser un jeu de taquin complet.
 Certaines fonctionnalités sont imposées mais vous pouvez ajouter tout ce qui vous amuse.
