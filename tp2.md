@@ -245,26 +245,22 @@ Vous pouvez complexifier en ajoutant la possibilité de modifier la taille du pl
 
 ![Plateau de taquin (v1)](imgs/taquin_v1.gif)
 
-En utilisant ou vous inspirant de tout ce qui a été vu depuis le début de ce tp, vous devez réaliser un jeu de taquin complet.
-Certaines fonctionnalités sont imposées mais vous pouvez ajouter tout ce qui vous amuse.
+En utilisant ou vous inspirant de tout ce qui a été vu depuis le début de ce TP, vous devez réaliser un jeu de taquin.
+Ci-dessous des exemples de fonctionnalités.
 
-Votre jeu aura au minimum 3 pages (vous pouvez en ajouter d'autres) :
-- une page de configuration
-- une page pour jouer
-- une page infos (auteurs, ...)
-
-La page de configuration doit permettre :
+Votre jeu peut permettre :
 - de régler la taille du taquin c'est-à-dire le nombre de lignes et/ou le nombre de colonnes
-- de choisir la difficulté i.e. le nombre de déplacements réalisés pour mélanger. Attention, il faut garantir la possibilité de pouvoir reconstituer l'image. Pour cela, il suffit de mélanger en réalisant des déplacements valides des tuiles
+- de choisir la difficulté i.e. le nombre de déplacements réalisés pour mélanger. Attention, il faut garantir la possibilité de pouvoir reconstituer l'image. Pour cela, il suffit de mélanger en ne réalisant que des déplacements valides de tuiles
 - de choisir une image :
+    * parmis quelques images statiques stockées dans votre projet (cf. [assets](https://flutter.dev/docs/development/ui/assets-and-images))
     * depuis internet via https://picsum.photos/512 par exemple
     * (facultatif) à partir d'une image parmi les photos de l'appareil ou de prendre une photo
     (cf. https://pub.dev/packages/image_picker par exemple - non testé)
-
-La page de jeu doit permettre :
-- d'afficher le plateau de jeu constitué de tuiles i.e. les morceaux de l'image mélangés
+- d'afficher le plateau de jeu constitué de tuiles i.e. les morceaux d'image mélangés
 - de jouer, c'est-à-dire que le joueur peut déplacer une tuile adjacente à la case vide,
 - d'afficher un compteur de déplacements
 - d'indiquer au joueur lorsqu'il a gagné
 - d'annuler le dernier coup joué (variante : autant de coups que l'on souhaite),
-- (difficile) : d'afficher un compteur indiquant en combien de coups il est possible de gagner à partir de la position courante
+- (facultatif/difficile) : d'afficher un compteur indiquant en combien de coups il est possible de gagner à partir de la position courante
+
+<h1>Soyez créatifs, amusez-vous, épatez-moi !</h1>
