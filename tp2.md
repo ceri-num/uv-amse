@@ -65,7 +65,6 @@ Ci-dessous le code complet de la widget `DisplayTileWidget` permettant d'affiche
 ![Affichage d'une partie d'une image](imgs/croppedTile.png)
 
 ```dart
-import 'package:Taquin/util.dart';
 import 'package:flutter/material.dart';
 
 class Tile {
@@ -92,7 +91,7 @@ class Tile {
 }
 
 Tile tile = new Tile(
-    imageURL: ImageGenerator.getStaticImageURL(0), alignment: Alignment(0, 0));
+    imageURL: 'https://picsum.photos/512', alignment: Alignment(0, 0));
 
 class DisplayTileWidget extends StatelessWidget {
   @override
@@ -112,7 +111,7 @@ class DisplayTileWidget extends StatelessWidget {
                 child: this.createTileWidgetFrom(tile))),
         Container(
             height: 200,
-            child: Image.network(ImageGenerator.getStaticImageURL(0),
+            child: Image.network('https://picsum.photos/512',
                 fit: BoxFit.cover))
       ])),
     );
