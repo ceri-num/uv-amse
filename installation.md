@@ -2,7 +2,7 @@
 
 - [Discord](discord.com)
 - [Visual studio code](https://code.visualstudio.com/)
--- plugins : [LiveShare](https://visualstudio.microsoft.com/services/live-share/) [Dart](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code) [Flutter](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter)
+    - plugins : [Dart](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code) [Flutter](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter)
 
 ## Installer git
 
@@ -16,14 +16,14 @@ Créer ensuite votre dépôt git pour AMSE sur Github. Vous devez avoir une URL 
 
 ## Installer Flutter
 
-Attention les instructions ci-dessous peuvent fonctionner sous tous les systèmes mais supposent que vous savez régler des variables d'environnement, ....
+Attention les instructions ci-dessous peuvent fonctionner sur tous les systèmes mais supposent que vous savez régler des variables d'environnement, ....
 
-Pour ceux qui sont sous Windows souhaitent être guidés, suivez l'un des tutos d'installation suivants :
+Ceux qui sont sous Windows, suivez l'un des tutos d'installation suivants :
 - https://flutter.dev/docs/get-started/install
 -  MLS/Ressources sur Flutter/Module Mobile et Image - Annexes - V0.1.pdf
 
 {% hint style="alert" %}
-Toutes les instructions d'installation ci-après donne les commandes SHELL pour installer Flutter.
+Toutes les instructions d'installation ci-après donnent les commandes SHELL pour installer Flutter.
 Si vous êtes sous Windows, il faudra adapter ces instructions ou vous référer à la documentation Flutter.
 {% endhint %}
 
