@@ -2,9 +2,10 @@
 
 - [Documentation de Flutter](https://flutter.dev/docs).
 - [Gallerie d'applications](https://gallery.flutter.dev/)
-- https://flutterawesome.com/
-- https://itsallwidgets.com/awesome-flutter-flutter-tutorials
-- https://github.com/Solido/awesome-flutter
+- <https://flutterawesome.com/>
+- <https://itsallwidgets.com/awesome-flutter-flutter-tutorials>
+- <https://github.com/Solido/awesome-flutter>
+- Plusieurs tutos détaillés pour créer des applications Flutter complètes : <https://flutter-pro.com/flutter>
 
 
 # FAQ
