@@ -1,6 +1,10 @@
 
 - [Documentation de Flutter](https://flutter.dev/docs)
-- [Gallerie d'applications](https://gallery.flutter.dev/)
+- [Widgets Flutter](https://docs.flutter.dev/ui/widgets/material)
+
+## Exemples d'applications Flutter
+
+- <https://flutter.github.io/samples/>
 
 ## Créer une application pas à pas
 

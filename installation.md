@@ -1,18 +1,16 @@
 ## Outils
 
-- [Discord](discord.com)
 - [Visual studio code](https://code.visualstudio.com/)
-    - plugins : [Dart](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code) [Flutter](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter)
+    - plugin : [Flutter](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter)
 
 ## Installer git
 
 Installer :
 
-- https://gitforwindows.org/
+- [Git for Windows](https://gitforwindows.org/)
 - Client git : [TurtoiseGit pour windows](https://tortoisegit.org/) ou [SourceTree](https://www.sourcetreeapp.com/)
 
 Créer ensuite votre dépôt git pour AMSE sur Github. Vous devez avoir une URL de dépôt similaire à : https://github.com/votre_login/amse.git
-
 
 ## Installer Flutter
 
@@ -35,10 +33,17 @@ $ ls flutter
 analysis_options.yaml  CODE_OF_CONDUCT.md  dartdoc_options.yaml  flutter_console.bat  PATENT_GRANT
 AUTHORS                CODEOWNERS          dev/                  LICENSE              README.md
 bin/                   CONTRIBUTING.md     examples/             packages/            version
+```
 
-# add flutter/bin in your PATH
-$ echo 'export PATH="$PATH:$HOME/flutter/bin"' >> ~/.bashrc
-$ source ~/.bashrc
+
+Configurer la variable d'environnement `PATH` en ajoutant le chemin `flutter.git/bin`.
+Sous GNU/Linux, à la fin de votre `.bashrc` ou `.profile`:
+
+```
+# Flutter & Dart
+export PATH="$PATH:$HOME/Prog/Flutter/flutter.git/bin"
+export CHROME_EXECUTABLE="/usr/bin/chromium"
+
 ```
 
 Vous devez maintenant avoir accès à l'outil CLI (Command Line Interface) `flutter` qui permet de créer un projet, de le compiler et de l'exécuter.
