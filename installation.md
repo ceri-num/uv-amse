@@ -16,13 +16,9 @@ Créer ensuite votre dépôt git pour AMSE sur Github. Vous devez avoir une URL 
 
 Attention les instructions ci-dessous peuvent fonctionner sur tous les systèmes mais supposent que vous savez régler des variables d'environnement, ....
 
-Ceux qui sont sous Windows, suivez l'un des tutos d'installation suivants :
-- https://flutter.dev/docs/get-started/install
--  MLS/Ressources sur Flutter/Module Mobile et Image - Annexes - V0.1.pdf
-
 {% hint style="alert" %}
 Toutes les instructions d'installation ci-après donnent les commandes SHELL pour installer Flutter.
-Si vous êtes sous Windows, il faudra adapter ces instructions ou vous référer à la documentation Flutter.
+Si vous êtes sous Windows, il faudra adapter ces instructions.
 {% endhint %}
 
 Si vous voulez utiliser la dernière version du dépôt git de Flutter et installer manuellement Flutter :
@@ -37,14 +33,19 @@ bin/                   CONTRIBUTING.md     examples/             packages/      
 
 
 Configurer la variable d'environnement `PATH` en ajoutant le chemin `flutter.git/bin`.
-Sous GNU/Linux, à la fin de votre `.bashrc` ou `.profile`:
+*Sous GNU/Linux*, à la fin de votre `.bashrc` ou `.profile`:
 
 ```
 # Flutter & Dart
-export PATH="$PATH:$HOME/Prog/Flutter/flutter.git/bin"
-export CHROME_EXECUTABLE="/usr/bin/chromium"
+export PATH="$PATH:$HOME/flutter/bin"
+export CHROME_EXECUTABLE="/usr/bin/chromium" # inutile si google-chrome
 
 ```
+
+*Sous Windows*, régler votre variable d'environnment `PATH` via les préférences Windows.
+<!-- - https://flutter.dev/docs/get-started/install -->
+<!-- -  MLS/Ressources sur Flutter/Module Mobile et Image - Annexes - V0.1.pdf -->
+
 
 Vous devez maintenant avoir accès à l'outil CLI (Command Line Interface) `flutter` qui permet de créer un projet, de le compiler et de l'exécuter.
 
