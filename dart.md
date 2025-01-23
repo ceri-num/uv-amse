@@ -13,14 +13,10 @@ Dart sur wikipedia : <https://en.wikipedia.org/wiki/Dart_(programming_language)>
 À Lire :
 - cf. MLS/Ressources sur Flutter/Module Mobile et Image - V0.4.pdf (Chapitres 3 et 4)
 - <https://dart.dev/guides/language/language-tour>
-- https://dart.dev/language
-- https://dart.dev/language/variables
-- https://dart.dev/language/functions
-- https://dart.dev/language/classes
-- https://dart.dev/language/concurrency
+- <https://dart.dev/language>
 - ...
 
-Tester Dart dans votre navigateur : <https://dartpad.dartlang.org>
+Tester Dart dans votre navigateur : <https://dartpad.dev>
 
 (Facultatif) Documentation Dart : <https://dart.dev/guides/language>
 

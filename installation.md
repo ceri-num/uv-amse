@@ -37,9 +37,9 @@ Configurer la variable d'environnement `PATH` en ajoutant le chemin `flutter.git
 
 ```
 # Flutter & Dart
-export PATH="$PATH:$HOME/flutter/bin"
-export CHROME_EXECUTABLE="/usr/bin/chromium" # inutile si google-chrome
-
+export FLUTTER_HOME="$HOME/flutter/"
+export PATH="$FLUTTER_HOME/bin:$PATH"
+export CHROME_EXECUTABLE="/usr/bin/chromium-browser"
 ```
 
 *Sous Windows*, régler votre variable d'environnment `PATH` via les préférences Windows.
@@ -73,6 +73,13 @@ $ flutter doctor
 
 La commande `flutter doctor` permet de vérifier que votre installation est correcte.
 Attention, nous n'avons pas encore tout installé et il est normal d'avoir des éléments en rouge à ce stade (Android SDK et Android studio par exemple) mais nous pouvons déjà créer un projet Flutter.
+
+Utiliser la version stable de Flutter:
+
+```
+flutter channel stable
+```
+
 
 ## Créer un projet Flutter
 
