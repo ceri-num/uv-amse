@@ -1,11 +1,17 @@
 
-- [Documentation de Flutter](https://flutter.dev/docs)
-- [Widgets Flutter](https://docs.flutter.dev/ui/widgets/material)
-- [Cookbook](https://docs.flutter.dev/cookbook)
 
 ## Exemples d'applications Flutter
 
+- <https://flutter.dev/showcase>
 - <https://flutter.github.io/samples/>
+- <https://flutter.dev/games>
+
+## Liens
+
+- [Documentation de Flutter](https://flutter.dev/docs)
+- [Widgets Flutter](https://docs.flutter.dev/ui/widgets/material)
+- [Cookbook](https://docs.flutter.dev/cookbook)
+- [App Architecture](https://docs.flutter.dev/app-architecture)
 
 ## Créer une application pas à pas
 
@@ -35,3 +41,7 @@ Aprofondissez votre connaissance de Flutter via le cours Flutter (cf. MLS/Ressou
 - Réaliser un lien externe
 - Gestion des événnements : Tap, swip, ...
     https://dart.dev/articles/archive/event-loop -->
+
+
+
+
