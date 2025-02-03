@@ -11,7 +11,6 @@ Dart sur wikipedia : <https://en.wikipedia.org/wiki/Dart_(programming_language)>
 ## Aperçu du langage Dart
 
 À Lire :
-- cf. MLS/Ressources sur Flutter/Module Mobile et Image - V0.4.pdf (Chapitres 3 et 4)
 - <https://dart.dev/guides/language/language-tour>
 - <https://dart.dev/language>
 - ...
