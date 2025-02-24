@@ -71,7 +71,7 @@ class Tile {
   String imageURL;
   Alignment alignment;
 
-  Tile({this.imageURL, this.alignment});
+  Tile({required this.imageURL,required this.alignment});
 
   Widget croppedImageTile() {
     return FittedBox(
